@@ -8,6 +8,14 @@ necessidade informada.
 > não é um canal oficial de atendimento. Em caso de emergência, ligue 192
 > (SAMU). Para outras dúvidas de saúde, ligue 136 (Disque Saúde).
 
+## Integrantes
+
+| Nome | RM |
+| --- | --- |
+| Gustavo Melo dos Santos | 573562 |
+| João Victor Canello Ferian | 573295 |
+| João Pedro Costenari Silva | 572260 |
+
 ## Funcionalidades
 
 - Seleção do bairro por lista de bairros presentes na base local.
