@@ -1,0 +1,25 @@
+# Dados brutos e saídas locais do CNES
+cnes_bruto.csv
+logs/
+data/geocodificacao_unidades.json
+data/relacionamentos_bairros.json
+
+# Ambiente Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Configuração local e ferramentas
+.env
+.env.*
+!.env.example
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# Testes e cobertura
+.pytest_cache/
+.coverage
+htmlcov/

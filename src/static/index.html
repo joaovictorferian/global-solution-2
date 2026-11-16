@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Orientação SUS</title>
+  <meta name="description" content="Informe seu bairro e o que você precisa para ver a orientação e as unidades de atendimento do SUS indicadas.">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <script src="/static/js/app.js" defer></script>
+</head>
+<body>
+  <a class="pular-conteudo" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="cabecalho">
+    <div class="container cabecalho-interno">
+      <span class="marca" aria-hidden="true">SUS</span>
+      <span class="cabecalho-nome">Orientação SUS</span>
+    </div>
+  </header>
+
+  <main id="conteudo" class="container principal">
+    <h1>Encontre atendimento no SUS</h1>
+    <p class="lead">Informe seu bairro e o que você precisa. Mostramos a orientação e as unidades indicadas para o seu caso.</p>
+
+    <p class="mensagem mensagem-info" id="aviso" role="note"></p>
+
+    <noscript>
+      <p class="mensagem mensagem-aviso">Este serviço precisa do JavaScript ativado. Em caso de emergência, ligue 192 (SAMU).</p>
+    </noscript>
+
+    <p class="mensagem mensagem-erro" id="erro-carregamento" role="alert" hidden></p>
+
+    <form id="formulario" novalidate>
+      <section class="etapa" aria-labelledby="titulo-bairro">
+        <h2 id="titulo-bairro"><span class="etapa-numero" aria-hidden="true">1</span>Informe seu bairro</h2>
+        <div class="campo">
+          <label for="bairro">Bairro</label>
+          <p class="dica" id="dica-bairro">Comece a digitar e escolha uma opção da lista. Usamos o bairro para indicar unidades próximas.</p>
+          <input id="bairro" name="bairro" type="text" list="lista-bairros" autocomplete="off" aria-describedby="dica-bairro erro-bairro">
+          <datalist id="lista-bairros"></datalist>
+          <p class="erro" id="erro-bairro" hidden></p>
+        </div>
+      </section>
+
+      <section class="etapa" aria-labelledby="titulo-necessidade">
+        <h2 id="titulo-necessidade"><span class="etapa-numero" aria-hidden="true">2</span>Diga o que você precisa</h2>
+
+        <div class="campo">
+          <label for="texto">Descreva com suas palavras <span class="opcional">(opcional)</span></label>
+          <p class="dica" id="dica-texto">Exemplo: preciso tomar vacina. Depois, toque em “Sugerir uma opção”.</p>
+          <textarea id="texto" name="texto" rows="3" maxlength="500" aria-describedby="dica-texto"></textarea>
+          <button type="button" class="botao botao-secundario" id="botao-sugerir">Sugerir uma opção</button>
+          <p class="mensagem mensagem-info" id="sugestao" role="status" hidden></p>
+        </div>
+
+        <fieldset class="campo" id="grupo-situacao" aria-describedby="erro-situacao">
+          <legend>Escolha uma opção</legend>
+          <div class="opcoes" id="opcoes-situacao"></div>
+          <p class="erro" id="erro-situacao" hidden></p>
+        </fieldset>
+
+        <div id="perguntas"></div>
+
+        <fieldset class="campo" id="grupo-modalidade" aria-describedby="erro-modalidade" hidden>
+          <legend>Que tipo de atendimento de saúde mental?</legend>
+          <div class="opcoes" id="opcoes-modalidade"></div>
+          <p class="erro" id="erro-modalidade" hidden></p>
+        </fieldset>
+      </section>
+
+      <div class="acoes">
+        <button type="submit" class="botao botao-primario" id="botao-enviar">Ver orientação</button>
+        <p class="erro" id="erro-envio" role="alert" hidden></p>
+      </div>
+    </form>
+
+    <section class="resultado" id="resultado" aria-labelledby="titulo-resultado" tabindex="-1" hidden>
+      <h2 id="titulo-resultado">Sua orientação</h2>
+      <div id="resultado-conteudo" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <p><strong>Em caso de emergência, ligue 192 (SAMU).</strong></p>
+      <p>Serviço informativo, sem vínculo com canais oficiais. Para outras dúvidas de saúde, ligue 136 (Disque Saúde).</p>
+    </div>
+  </footer>
+</body>
+</html>

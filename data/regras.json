@@ -1,0 +1,243 @@
+{
+  "situacoes": [
+    {
+      "id": "dentista",
+      "titulo": "Dentista / saúde bucal",
+      "palavras": [
+        "dente",
+        "dentista",
+        "dor de dente",
+        "gengiva",
+        "boca",
+        "obturacao",
+        "obturação",
+        "siso",
+        "carie",
+        "cárie",
+        "canal",
+        "abscesso",
+        "dente quebrado"
+      ],
+      "perguntas": [
+        {
+          "id": "urgencia",
+          "texto": "Você precisa de atendimento odontológico de urgência?"
+        }
+      ],
+      "regras": [
+        {
+          "quando": {
+            "urgencia": true
+          },
+          "orientacao": "Para atendimento odontológico de urgência, procure uma unidade da rede que ofereça esse serviço. A rede municipal disponibiliza atendimento odontológico de urgência para situações como dor aguda, infecções e traumas.",
+          "tipos": [
+            "UPA",
+            "PRONTO-SOCORRO"
+          ],
+          "levar": [
+            "Cartão SUS, se possuir",
+            "Documento de identificação"
+          ],
+          "fonte": {
+            "titulo": "Atendimento às Urgências Odontológicas - Secretaria Municipal da Saúde de São Paulo",
+            "url": "https://coleta.prefeitura.sp.gov.br/web/saude/w/atencao_basica/344440",
+            "verificado_em": "2026-11-09"
+          }
+        },
+        {
+          "quando": {},
+          "orientacao": "Para atendimento odontológico sem urgência, procure a UBS indicada para receber orientação sobre o acesso ao serviço de saúde bucal. Se necessário, a equipe poderá orientar o encaminhamento para atendimento especializado.",
+          "tipos": [
+            "UBS"
+          ],
+          "levar": [
+            "Cartão SUS, se possuir",
+            "Documento de identificação"
+          ],
+          "fonte": {
+            "titulo": "UBS: saiba quando procurar este serviço na rede municipal",
+            "url": "https://www2.prefeitura.sp.gov.br/web/saude/w/ubs-saiba-quando-procurar-este-servi%C3%A7o-na-rede-municipal-5",
+            "verificado_em": "2026-11-09"
+          }
+        }
+      ]
+    },
+    {
+      "id": "consulta",
+      "titulo": "Consulta médica / problemas de saúde",
+      "palavras": [
+        "consulta",
+        "medico",
+        "médico",
+        "clinico",
+        "clínico",
+        "febre",
+        "gripe",
+        "resfriado",
+        "tosse",
+        "dor de cabeça",
+        "diarreia",
+        "hipertensao",
+        "hipertensão",
+        "diabetes",
+        "acompanhamento"
+      ],
+      "perguntas": [
+        {
+          "id": "urgencia",
+          "texto": "Você considera que precisa de atendimento de urgência?"
+        }
+      ],
+      "regras": [
+        {
+          "quando": {
+            "urgencia": true
+          },
+          "orientacao": "Para problemas que exigem atendimento rápido, procure uma UPA ou Pronto-Socorro. As UPAs funcionam 24 horas e são destinadas a situações de urgência e emergência.",
+          "tipos": [
+            "UPA",
+            "PRONTO-SOCORRO"
+          ],
+          "levar": [
+            "Cartão SUS, se possuir",
+            "Documento de identificação"
+          ],
+          "fonte": {
+            "titulo": "UPA: saiba quando procurar este serviço na rede municipal",
+            "url": "https://coleta.prefeitura.sp.gov.br/web/saude/w/upa-saiba-quando-procurar-este-servi%C3%A7o-na-rede-municipal-4",
+            "verificado_em": "2026-11-09"
+          }
+        },
+        {
+          "quando": {},
+          "orientacao": "Para consultas, acompanhamento de saúde e problemas menos graves, procure uma UBS. A UBS é a porta de entrada da Atenção Primária do SUS e oferece consultas e acompanhamento de diferentes condições de saúde.",
+          "tipos": [
+            "UBS"
+          ],
+          "levar": [
+            "Cartão SUS, se possuir",
+            "Documento de identificação"
+          ],
+          "fonte": {
+            "titulo": "Unidades Básicas de Saúde (UBS) - Secretaria Municipal da Saúde de São Paulo",
+            "url": "https://prefeitura.sp.gov.br/web/saude/w/unidades-basicas-de-saude-ubs",
+            "verificado_em": "2026-11-09"
+          }
+        }
+      ]
+    },
+    {
+      "id": "vacinacao",
+      "titulo": "Vacinação",
+      "palavras": [
+        "vacina",
+        "vacinacao",
+        "vacinação",
+        "imunizacao",
+        "imunização",
+        "dose",
+        "reforco",
+        "reforço",
+        "carteira de vacina",
+        "carteirinha de vacina"
+      ],
+      "perguntas": [],
+      "regras": [
+        {
+          "quando": {},
+          "orientacao": "Para vacinação, procure uma UBS com sala de vacina. A rede municipal disponibiliza vacinação em unidades distribuídas pela cidade. Confirme na unidade a disponibilidade da vacina necessária.",
+          "tipos": [
+            "UBS"
+          ],
+          "levar": [
+            "Documento de identificação",
+            "Cartão SUS, se possuir",
+            "Carteira ou comprovante de vacinação, se possuir"
+          ],
+          "fonte": {
+            "titulo": "Postos de Vacinação - Secretaria Municipal da Saúde de São Paulo",
+            "url": "https://prefeitura.sp.gov.br/web/saude/w/vigilancia_em_saude/vacinacao/360678",
+            "verificado_em": "2026-11-09"
+          }
+        }
+      ]
+    },
+    {
+      "id": "medicamentos",
+      "titulo": "Medicamentos / farmácia do SUS",
+      "palavras": [
+        "remedio",
+        "remédio",
+        "medicamento",
+        "farmacia",
+        "farmácia",
+        "receita",
+        "retirar remedio",
+        "retirar remédio",
+        "pegar remedio",
+        "pegar remédio"
+      ],
+      "perguntas": [],
+      "regras": [
+        {
+          "quando": {},
+          "orientacao": "Para obter medicamentos pelo SUS, procure uma farmácia da rede pública. O acesso depende do medicamento e pode exigir prescrição e outros documentos. Confirme previamente se o medicamento está disponível na rede. Para conferir a disponibilidade, acesse o serviço Remédio na Hora, da Prefeitura de São Paulo: https://e-saudesp.prefeitura.sp.gov.br/remedio-na-hora",
+          "tipos": [
+            "UBS"
+          ],
+          "levar": [
+            "Documento de identificação",
+            "Cartão SUS, se possuir",
+            "Receita ou prescrição válida, quando exigida para o medicamento"
+          ],
+          "fonte": {
+            "titulo": "Acesso a medicamentos no Sistema Único de Saúde (SUS) - Secretaria Municipal da Saúde de São Paulo",
+            "url": "https://prefeitura.sp.gov.br/web/saude/w/atencao_basica/300000",
+            "verificado_em": "2026-11-09"
+          }
+        }
+      ]
+    },
+    {
+      "id": "saude_mental",
+      "titulo": "Saúde mental / atendimento psicológico",
+      "palavras": [
+        "psicologo",
+        "psicólogo",
+        "psicologa",
+        "psicóloga",
+        "psiquiatra",
+        "saude mental",
+        "saúde mental",
+        "caps",
+        "dependencia",
+        "dependência",
+        "alcool",
+        "álcool",
+        "drogas",
+        "atendimento psicologico",
+        "atendimento psicológico"
+      ],
+      "perguntas": [],
+      "regras": [
+        {
+          "quando": {},
+          "orientacao": "Para atendimento em saúde mental, a UBS é uma das portas de entrada da rede municipal. Os CAPS também oferecem atendimento de saúde mental em regime de porta aberta, sem necessidade de agendamento prévio ou encaminhamento.",
+          "tipos": [
+            "UBS",
+            "CAPS"
+          ],
+          "levar": [
+            "Cartão SUS, se possuir",
+            "Documento de identificação"
+          ],
+          "fonte": {
+            "titulo": "Centros de Atenção Psicossocial (CAPS) - Secretaria Municipal da Saúde de São Paulo",
+            "url": "https://smartsampa.prefeitura.sp.gov.br/web/saude/w/saude_mental_ad/caps",
+            "verificado_em": "2026-11-09"
+          }
+        }
+      ]
+    }
+  ]
+}
