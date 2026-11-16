@@ -65,6 +65,7 @@ ARCGIS_TOKEN=seu_token_do_arcgis
 
 Sem esse token, a aplicação continua funcionando usando o fallback por bairro,
 mas não calcula distâncias e tempos de rota.
+Para gerar o token, siga as orientações presentes em: https://developers.arcgis.com/documentation/security-and-authentication/api-key-authentication/tutorials/create-an-api-key/location-platform/
 
 ## Executando a aplicação
 
